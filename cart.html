@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vegan App | My Cart</title>
+
+    <!-- Favicons -->
+    <link href="images/favicon.png" rel="icon">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jquery file -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+  
+    
+
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <ul class="menu">
+                <li class="item-list">
+                    <a href="index.html">Home</a>
+                </li>
+                 <li class="item-list">
+                    <a href="service.html">Services</a>
+                </li>
+                <li class="item-list">
+                    <a href="products-grid.html">Products</a>
+                </li>
+                <!-- <li class="item-list">
+                    <a href="account.html">My Account</a>
+                </li> -->
+                <li class="item-list">
+                    <a href="about.html">About Us</a> 
+                </li>
+                <li class="item-list">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+                <li class="item-list" id="btn-log">
+                    <a href="account.html" id="btn-login">Log In</a>  
+                </li>
+               
+            </ul>
+            <a href="#" id="toggle-btn">Vegan</a>
+            <div class="toggle-bag">
+                <a href="cart.html" id="btn-bag" class="active">
+                    <i class="fa fa-shopping-bag"></i>
+                        <span class="badge">3</span>
+                        My Cart
+                </a>
+                <a href="account.html" class="button-user" id="toggle-user-btn"><i class="fa fa-user"></i> My Profile</a>
+                
+            </div>
+            
+        </nav> 
+    </header>
+
+    <div class="section" id="start">
+            <div class="container">
+                <h2>
+                    Your Cart
+                </h2>
+                <h3>My Cart</h3>
+                <hr>
+                
+            </div>
+        </div>
+    
+    <div class="section" id="cart-section">
+        <div class="container">
+            <div class="cart-content">
+                <div>
+                        <div class="table-main table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Images</th>
+                                            <th>Product Name</th>
+                                            <th>Price</th>
+                                            <th>Quantity</th>
+                                            <th>Total</th>
+                                            <th>Remove</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="thumbnail-img">
+                                                <a href="#">
+                                            <img class="img-fluid" src="images/prods/img-pro-01.jpg" alt="" />
+                                        </a>
+                                            </td>
+                                            <td class="name-pr">
+                                                <a href="#">
+                                                    Rabbit
+                                                </a>
+                                            </td>
+                                            <td class="price-pr">
+                                                <p>$ 80.0</p>
+                                            </td>
+                                            <td class="quantity-box"><input type="number" size="4" value="1" min="0" step="1" class="c-input-text qty text"></td>
+                                            <td class="total-pr">
+                                                <p>$ 80.0</p>
+                                            </td>
+                                            <td class="remove-pr">
+                                                <a href="#">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td class="thumbnail-img">
+                                                <a href="#">
+                                            <img class="img-fluid" src="images/prods/img-pro-02.jpg" alt="" />
+                                        </a>
+                                            </td>
+                                            <td class="name-pr">
+                                                <a href="#">
+                                            Tomato
+                                        </a>
+                                            </td>
+                                            <td class="price-pr">
+                                                <p>$ 50.0</p>
+                                            </td>
+                                            <td class="quantity-box"><input type="number" size="4" value="2" min="0" step="1" class="c-input-text qty text"></td>
+                                            <td class="total-pr">
+                                                <p>$ 100.0</p>
+                                            </td>
+                                            <td class="remove-pr">
+                                                <a href="#">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="thumbnail-img">
+                                                <a href="#">
+                                            <img class="img-fluid" src="images/prods/img-pro-03.jpg" alt="" />
+                                        </a>
+                                            </td>
+                                            <td class="name-pr">
+                                                <a href="#">
+                                            Orange
+                                        </a>
+                                            </td>
+                                            <td class="price-pr">
+                                                <p>$ 30.0</p>
+                                            </td>
+                                            <td class="quantity-box"><input type="number" size="4" value="3" min="0" step="1" class="c-input-text qty text"></td>
+                                            <td class="total-pr">
+                                                <p>$ 90.0</p>
+                                            </td>
+                                            <td class="remove-pr">
+                                                <a href="#">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <input type="submit" value="UPDATE CART" id="btn-coupon">
+                </div>
+
+                <div>
+                    <h3><strong>Order Summary</strong></h3>
+                    <p>Sub Total: <strong>$ 130</strong></p>
+                    <p>Discount: <strong>$ 40</strong></p>
+                    <hr class="line-simple">
+
+                    <p>Tax:            <strong>$ 2</strong></p>
+                    <p>Shipping Cost: <strong> Free</strong></p>
+                    <hr class="line-simple">
+                    <p><strong>Grand Total       $ 388</strong> </p>
+                    <hr class="line-simple">
+                    <label for=""><strong>Deliver</strong></label>
+                    <input type="radio" name="drive" id="drive"><label for="">Yes</label>
+                    <input type="radio" name="drive" id="drive"><label for="">Not</label>
+                        <a href="#popup"><button>Finalizar</button></a>
+                    
+                   
+
+                </div>
+            </div>
+            
+            
+                <a name="popup"></a>
+                <div class="popup" id="popup">
+                    <div class="popup-inner">
+                        <div class="popup-text">
+                            <h1>Checkout</h1>
+                            
+                            <div class="popup-form">
+                                <form action="">
+                                    <input type="radio" name="card-fields" id="card-fields">
+                                    <label for="">Master Card</label>
+                                    
+                                    <br>
+
+                                    <input type="radio" name="card-fields" id="card-fields">
+                                    <label for="">Paypal Card</label><br>
+
+                                    <input type="radio" name="card-fields" id="card-fields">
+                                    <label for="">Visa Card</label><br>
+                                    
+                    
+                                   
+                                   <button>Submit</button>
+
+                                </form>
+
+                                <div class="payment-icon">
+                                    <ul>
+                                        <li><img class="img-fluid"  src="images/payment-icon/2.png" alt=""></li>
+                                        <li><img class="img-fluid" src="images/payment-icon/5.png" alt=""></li>
+                                      
+                                        <li><img class="img-fluid"  src="images/payment-icon/1.png" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="popup-close">
+                                <i id="popup-btnClose" class="fa fa-times"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            
+        </div>
+    </div>
+
+
+
+
+          <!-- Start Instagram Feed  -->
+          <div class="instagram-box">
+            <div class="main-instagram owl-carousel owl-theme">
+                <div class="item">
+                    <div class="ins-inner-box">
+                        <img src="images/instagram-img/instagram-img-01.jpg" alt="" />
+                        <div class="hov-in">
+                            <a href="product-single.html"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ins-inner-box">
+                        <img src="images/instagram-img/instagram-img-02.jpg" alt="" />
+                        <div class="hov-in">
+                            <a href="product-single.html"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ins-inner-box">
+                        <img src="images/instagram-img/instagram-img-03.jpg" alt=""/>
+                        <div class="hov-in">
+                            <a href="product-single.html"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ins-inner-box">
+                        <img src="images/instagram-img/instagram-img-04.jpg" alt="" />
+                        <div class="hov-in">
+                            <a href="product-single.html"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ins-inner-box">
+                        <img src="images/instagram-img/instagram-img-05.jpg" alt=""/>
+                        <div class="hov-in">
+                            <a href="product-single.html"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ins-inner-box">
+                        <img src="images/instagram-img/instagram-img-06.jpg" alt="" />
+                        <div class="hov-in">
+                            <a href="product-single.html"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ins-inner-box">
+                        <img src="images/instagram-img/instagram-img-07.jpg" alt="" />
+                        <div class="hov-in">
+                            <a href="product-single.html"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ins-inner-box">
+                        <img src="images/instagram-img/instagram-img-08.jpg" alt="" />
+                        <div class="hov-in">
+                            <a href="product-single.html"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ins-inner-box">
+                        <img src="images/instagram-img/instagram-img-09.jpg" alt="" />
+                        <div class="hov-in">
+                            <a href="product-single.html"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ins-inner-box">
+                        <img src="images/instagram-img/instagram-img-01.jpg" alt="" />
+                        <div class="hov-in">
+                            <a href="product-single.html"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    <!-- footer section -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <strong>
+                    <p>2020 © <a href="" class="footer-icon">Vegan App</a> All Right Reserved.</p>
+                </strong>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
+            </div>
+        </div>
+       
+    </footer>
+     
+
+    <!-- jquery file -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
